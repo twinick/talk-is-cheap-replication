@@ -204,7 +204,8 @@ arrow(X_OUT_CO, y_bus, X_OUT_CO, Y_OUT + 0.31)
 arrow(X_OUT_DO, y_bus, X_OUT_DO, Y_OUT + 0.31)
 
 # ── save ──────────────────────────────────────────────────────────────────────
-out = "/Users/tranwinick/Documents/GitHub/talk-is-cheap-replication/Figures/pipeline_horizontal.png"
+import os as _os
+out = _os.path.join(_os.path.dirname(__file__), "pipeline_horizontal.png")
 fig.savefig(out, dpi=220, bbox_inches="tight",
             facecolor="#1a1a2e", edgecolor="none")
 print(f"Saved: {out}")
