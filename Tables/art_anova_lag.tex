@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.88}
+\caption{ART ANOVA (left) and Tukey post-hoc contrasts (right) for within-sprint discussion--implementation lag. Panel A: contributor group and sprint (all non-significant). Panel B: sprint quarter.}
+\label{tab:art_anova_lag}
+\begin{tabular}{l r r r r @{\hskip 8pt} l r r}
+\toprule
+\multicolumn{5}{c}{\textbf{ART ANOVA}} & \multicolumn{3}{c}{\textbf{Tukey Contrasts}} \\
+\cmidrule(r){1-5} \cmidrule(l){6-8}
+\textbf{Effect} & \textbf{df} & \textbf{df\textsubscript{res}} & \textbf{F} & \textbf{p} & \textbf{Contrast} & \textbf{t} & \textbf{p} \\
+\midrule
+\multicolumn{5}{l}{\textbf{Panel A: Contributor group $\times$ Sprint}} & Q1 - Q2 & 6.02 & $< .001$*** \\
+Contributor group & 1 & 503 & 0.05 & 0.823 & Q1 - Q3 & 6.71 & $< .001$*** \\
+Sprint & 2 & 503 & 0.08 & 0.925 & Q1 - Q4 & 5.37 & $< .001$*** \\
+Contributor $\times$ Sprint & 2 & 503 & 0.60 & 0.551 & Q2 - Q3 & 0.17 & 0.998 \\
+\midrule
+\multicolumn{5}{l}{\textbf{Panel B: Sprint quarter}} & Q2 - Q4 & -1.80 & 0.273 \\
+Quarter & 3 & 505 & 16.08 & $< .001$*** & Q3 - Q4 & -2.52 & 0.058 \\
+\midrule
+\multicolumn{8}{l}{\textit{Note.} * $p < .05$; ** $p < .01$; *** $p < .001$} \\
+\bottomrule
+\end{tabular}
+\end{table}

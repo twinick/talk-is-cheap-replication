@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.88}
+\caption{OLS regression of discussion--implementation lag by contributor role and sprint phase (HC3 robust SEs).}
+\label{tab:lag_model}
+\begin{tabular}{l r}
+\toprule
+ & \textbf{Lag (coef / SE)} \\
+\midrule
+Lower contributor & -0.004 (0.031) \\
+Sprint quarter Q2 & -0.096** (0.019) \\
+Sprint quarter Q3 & -0.098** (0.018) \\
+Sprint quarter Q4 & -0.082** (0.018) \\
+Sprint 2 & -0.008 (0.006) \\
+Sprint 3 & -0.004 (0.006) \\
+Lower contributor $\times$ Q2 & -0.049 (0.117) \\
+Lower contributor $\times$ Q3 & -0.010 (0.036) \\
+Lower contributor $\times$ Q4 & -0.004 (0.038) \\
+\midrule
+$N$ & 509 \\
+$R^2$ & 0.170 \\
+\midrule
+\multicolumn{2}{l}{\textit{Note.} * $p < .05$; ** $p < .01$} \\
+\bottomrule
+\end{tabular}
+\end{table}

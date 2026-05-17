@@ -1,0 +1,33 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.88}
+\caption{Firth-penalized logistic regression predicting low contribution or withdrawal across sprint transitions (cluster-robust SEs, 24 teams). GitHub events are log-transformed; peer-risk flag indicates any peer evaluation of hitchhiker or couch potato in the current sprint.}
+\label{tab:firth_combined}
+\begin{tabular}{l r r}
+\toprule
+\textbf{Predictor} & \textbf{OR [95\% CI]} & \textbf{p} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Sprint 1 $\to$ Sprint 2}} \\
+\midrule
+GitHub events (log) & 0.39 [0.28, 0.53] & $< .001$*** \\
+Any peer-risk flag  & 10.93 [1.88, 63.50] & 0.008** \\
+LOO-AUC             & \multicolumn{2}{r}{0.907} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Sprint 2 $\to$ Sprint 3}} \\
+\midrule
+GitHub events (log) & 0.29 [0.19, 0.46] & $< .001$*** \\
+Any peer-risk flag  & 26.68 [4.59, 155.09] & $< .001$*** \\
+LOO-AUC             & \multicolumn{2}{r}{0.943} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Sprint 1 $\to$ Sprint 3}} \\
+\midrule
+GitHub events (log) & 0.36 [0.24, 0.55] & $< .001$*** \\
+Any peer-risk flag  & 3.63 [0.39, 33.63] & 0.257 \\
+LOO-AUC             & \multicolumn{2}{r}{0.854} \\
+\midrule
+\multicolumn{3}{l}{\textit{Note.} * $p < .05$; ** $p < .01$; *** $p < .001$} \\
+\bottomrule
+\end{tabular}
+\end{table}

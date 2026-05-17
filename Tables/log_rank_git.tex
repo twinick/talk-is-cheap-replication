@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.88}
+\caption{Log-rank test of time to first GitHub engagement by contributor group (higher vs.\ lower).}
+\label{tab:logrank_git}
+\begin{tabular}{l r r}
+\toprule
+\textbf{Event type} & \textbf{$\chi^2$} & \textbf{p-value} \\
+\midrule
+Commit & 19.93 & $< .001$*** \\
+Issue Opened & 25.86 & $< .001$*** \\
+PR Opened & 29.76 & $< .001$*** \\
+PR Review & 7.79 & 0.005** \\
+\midrule
+\multicolumn{3}{l}{\textit{Note.} * $p < .05$; ** $p < .01$; *** $p < .001$} \\
+\bottomrule
+\end{tabular}
+\end{table}

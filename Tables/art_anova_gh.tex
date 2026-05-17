@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{ART ANOVA: GitHub event count by peer-identified teammate type.}
+\label{tab:gh-anova-dominant}
+\begin{tabular}{l r r r}
+\toprule
+\textbf{Effect} & \textbf{df} & \textbf{F} & \textbf{p-value} \\
+\midrule
+Dominant peer type & 3 & 35.31 & $< .001$*** \\
+Event type & 3 & 263.79 & $< .001$*** \\
+Sprint & 2 & 122.50 & $< .001$*** \\
+Dominant peer type $\times$ Event type & 9 & 5.87 & $< .001$*** \\
+Dominant peer type $\times$ Sprint & 2 & 3.87 & 0.021* \\
+Event type $\times$ Sprint & 6 & 12.43 & $< .001$*** \\
+Dominant peer type $\times$ Event type $\times$ Sprint & 6 & 0.67 & 0.677 \\
+\midrule
+\multicolumn{4}{l}{\textit{Note.} * $p < .05$; ** $p < .01$; *** $p < .001$} \\
+\bottomrule
+\end{tabular}
+\end{table}
