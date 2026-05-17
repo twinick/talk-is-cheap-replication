@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# R artifacts
+Rplots.pdf
+
+# Raw / sensitive data (not included per IRB)
+data/raw/
+data/participants.csv
+data/evaluations.csv
+data/teams_messages_anon.csv
+data/github_activity_anon.csv
+
+# Editor / tool settings
+.claude/
