@@ -35,6 +35,17 @@ Requires R 4.1+.
 
 The following processed and anonymized datasets are included and sufficient to reproduce all analyses:
 
+### Stage 1 outputs — anonymized source data (input to Stages 2–3)
+
+| File | Description |
+|------|-------------|
+| `data/teams_messages_anon.csv` | Pseudonymized Teams messages with PII redacted |
+| `data/github_activity_anon.csv` | Pseudonymized GitHub events |
+| `data/participants.csv` | Participant–pseudonym mapping (team, student ID, sprint, global ID) |
+| `data/evaluations.csv` | Pseudonymized peer evaluation responses |
+
+### Stage 2–3 outputs — analysis-ready data (input to R scripts)
+
 | File | Description |
 |------|-------------|
 | `analysis/analysis_inputs/github_events_with_progress.csv` | GitHub events with sprint-normalized timing |
@@ -45,7 +56,7 @@ The following processed and anonymized datasets are included and sufficient to r
 | `data/derived/messages_with_thread_codes.csv` | Classified messages with activity codes |
 | `data/manual_annotations.csv` | 200 hand-labeled messages used to train the SBERT classifier |
 
-**Raw data (Teams messages, GitHub activity, peer evaluation survey responses) is not included** due to participant privacy. The IRB-approved anonymization pipeline is provided for transparency; see Stage 1 below.
+**Truly raw data (identifiable Teams messages, GitHub usernames, peer evaluation survey responses before anonymization) is not included** due to participant privacy. The IRB-approved anonymization pipeline is provided for transparency; see Stage 1 below.
 
 ---
 
